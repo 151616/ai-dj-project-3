@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+  <title>AI DJ app</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+</head>
+<body background="background.jpg">
+
+<div class="container">
+    <h1>
+        <div>DJ Music Mixer</div>
+        <br>
+        <h3 id="instructions">If you lift the right wrist, then it will play the song on the right. If you raise your hand on the left, it will play the song on the left. Click the next arrow to play songs in 5 different languages</h3>
+    </h1>
+    
+      
+    
+<div id="myCarousel" class="carousel slide" >
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <center>
+            <div id="hindi-songs"> 
+                <a id="button" class="btn btn-danger">Vaaste</a>
+                <a id="button" class="btn btn-danger">Rahat Fateh<br> Ali Khan</a>
+          <div class="carousel-content">
+            <p class="numbertext">1 / 5</p>
+          <p class="text">Hindi Songs</p>
+          </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="item">
+        <center>
+            <div id="bengali-songs">
+                <a id="button" class="btn btn-danger">Oporadhi</a>
+                <a id="button" class="btn btn-danger">Nesha</a>
+          <div class="carousel-content">
+
+            <p class="numbertext">2 / 5</p>
+        <p class="text">Bengali Songs</p>
+        </div>
+          </div>
+        </center>
+      </div>
+
+      <div class="item">
+        <center>
+            <div id="marathi-songs">
+                <a id="button" class="btn btn-danger">Zingaat</a>
+                <a id="button" class="btn btn-danger">Govyachya Kinaryav</a>
+          <div class="carousel-content">
+
+            <p class="numbertext">3 / 5</p>
+        <p class="text">Marathi Songs</p>
+        </div>
+          </div>
+        </center>
+      </div>
+
+
+      <div class="item">
+        <center>
+            <div id="telugu-songs">
+                <button id="button" class="btn btn-danger">ButtoBomma</button>
+                <button id="button" class="btn btn-danger">Ramulo Ramula</button>
+          <div class="carousel-content">
+
+            <p class="numbertext">4 / 5</p>
+        <p class="text">Telugu Songs</p>
+        </div>
+          </div>
+        </center>
+      </div>
+    
+      <div class="item">
+        <center>
+            <div id="tamil-songs">
+                <a id="button" class="btn btn-danger">Rowdy Baby</a>
+                <a id="button" class="btn btn-danger">Enjoy Enjaami</a>
+          <div class="carousel-content">
+
+            <p class="numbertext">5/ 5</p>
+        <p class="text">Tamil Songs</p>
+        </div>
+          </div>
+        </center>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" onclick="prev()">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" onclick="next()">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

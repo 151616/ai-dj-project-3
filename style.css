@@ -1,0 +1,30 @@
+.slideshow-container{
+    text-align: center;
+    background-color: darkblue;
+    box-shadow: 10px 10px 10px black;
+}
+.text{
+    color: white;
+    font-size: 18px;
+    text-shadow: 10px 10px 10px black;
+}
+.numbertext{
+    font-size: 15px;
+    color: white;
+    margin: 10px;
+    font-family:'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 5px black;
+}
+#instructions{
+    color: white;
+    font-size: 18px;
+}
+
+canvas{
+    border: 5px ridge white;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px lightblue;
+}
+html{
+    scroll-behavior: smooth;
+}
